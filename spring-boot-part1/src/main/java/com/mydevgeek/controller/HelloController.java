@@ -15,4 +15,8 @@ public class HelloController {
     public String index() {
         return "Hello World!";
     }
+    @RequestMapping(value = "/welcome", method = RequestMethod.GET)
+    public String welcome() {
+        return "Welcome World!";
+    }
 }
